@@ -2,7 +2,7 @@
   font-family: 'Cormorant Garamond Regular';
   src: url('/mi/CormorantGaramond-Regular.woff2') format('woff2'),
        url('/mi/CormorantGaramond-Regular.woff') format('woff'),
-       url('/mi/CormorantGaramond-Regular.ttf') format('truetype')
+       url(file:///C:/Users/burnt/OneDrive/Documents/GitHub/newspdz/mi/CormorantGaramond-Regular.ttf) format('truetype')
 }
 
 
@@ -10,6 +10,20 @@ body, h2, p {
     margin: 0;
     padding: 0;
     text-align: justify;
+    font-size: 16px;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    font-family: 'Cormorant Garamond Regular', serif;
+  }
+  subh3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
   }
   p {
     font-family: 'Times New Roman', Times, serif;
@@ -36,6 +50,8 @@ body, h2, p {
     max-width: 950px; 
     margin: 0 auto;
     padding: 20px;
+
+    /*l and r cont go in here too*/
   }
   .header {
     text-align: center;
@@ -43,11 +59,37 @@ body, h2, p {
     color: #fff; 
     padding: 10px;
   }
-  .content {
+  /*new*/.content {
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #000000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+
+  /*old*/
+  /*.content {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ddd; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  */
+
+  /*subhead*/ .internal-cont-content {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */ 
+   }
+
+
+  /* Small content box for the subsubhead*/.less-content {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    max-width: 30%;
+    margin: auto; 
   }
 
 
@@ -126,12 +168,11 @@ body, h2, p {
   }
   .wikibox {
     background-color: #fff; 
-    border: 1px solid #ddd; 
+    border: 1px solid gray; 
     padding: 20px;
     margin: 40px; 
     margin-bottom: 0px;
     margin: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     max-width: 400px;
   }
   .transbox {
@@ -152,4 +193,14 @@ body, h2, p {
     max-height: 900px;
     flex-grow: 1; /* Allow boxes to grow equally */
     margin: 10px; /* Add some margin for spacing */
+  }
+  .entrybox {
+    background-color: #fff;
+    border: 2px solid gray;
+    padding: 20px;
+    margin: 10px; /* Adjust margin to your preference */
+    max-width: 30%;
+    display: inline-block;
+    vertical-align: top; /* To align boxes at the top */
+    box-sizing: border-box; /* Include padding and border in the width */
   }
