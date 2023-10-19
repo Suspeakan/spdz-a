@@ -1,8 +1,7 @@
 @font-face {
   font-family: 'Cormorant Garamond Regular';
-  src: url('/mi/CormorantGaramond-Regular.woff2') format('woff2'),
-       url('/mi/CormorantGaramond-Regular.woff') format('woff'),
-       url(file:///C:/Users/burnt/OneDrive/Documents/GitHub/newspdz/mi/CormorantGaramond-Regular.ttf) format('truetype')
+  src:
+       url('CormorantGaramond-Regular.ttf') format('truetype')
 }
 
 
