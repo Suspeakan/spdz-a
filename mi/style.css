@@ -4,7 +4,9 @@
        url('CormorantGaramond-Regular.ttf') format('truetype')
 }
 
-
+a2 {
+  color: #ddd;
+}
 body, h2, p {
     margin: 0;
     padding: 0;
